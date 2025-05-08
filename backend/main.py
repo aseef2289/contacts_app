@@ -50,6 +50,7 @@ def delete_contact(user_id):
     db.session.commit()
     return jsonify({"message": "Contact deleted successfully"}), 200
 
+# Change to practice doing a PR
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
